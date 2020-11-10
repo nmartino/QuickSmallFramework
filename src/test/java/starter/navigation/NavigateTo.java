@@ -3,7 +3,6 @@ package starter.navigation;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Open;
-import net.thucydides.core.annotations.Step;
 import starter.pages.AliExpressPage;
 
 

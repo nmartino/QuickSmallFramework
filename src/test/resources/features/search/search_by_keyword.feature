@@ -1,12 +1,7 @@
-Feature: Search by keyword
+@deviget
+Feature: Search by keyword on aliexpress
 
-  Scenario: Searching for a term
-    Given Sergey is on the DuckDuckGo home page
-    When he searches for "Cucumber"
-    Then all the result titles should contain the word "Cucumber"
-
-  Scenario: Refining a search using two terms
-    Given Sergey is on the DuckDuckGo home page
-    And he has searched for "Cucumber"
-    When he searches again for "zucchini"
-    Then all the result titles should contain the word "zucchini"
+  Scenario: line: Searching for the second item going from the home page
+    Given The user is on the aliexpress homepage
+    When he search for an item 'iphone' and go to the second page of the results and clicks on the option number '2'
+    Then there are items for buy
