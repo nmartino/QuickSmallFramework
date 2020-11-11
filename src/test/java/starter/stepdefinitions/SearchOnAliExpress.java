@@ -35,12 +35,14 @@ public class SearchOnAliExpress {
 
     @When("he search for an item (.*) and go to the second page of the results and clicks on the option number 2")
     public void theUserSearchesForAnItem(String item) {
+        //navigating again to the home page so the pop up would dissapear (the popup was always "unavailable to be clicked"
         theActorInTheSpotlight().attemptsTo(NavigateTo.theAliExpressSearchPage());
         theActorInTheSpotlight().attemptsTo(DoASearchOnAliExpress.searchForAnItem(item));
     }
 
     @Then("there are items for buy")
     public void thereAreItemsForBuy() {
+        //creating a windows handle in order to change to the second tab that is opened
         WebDriver driver = BrowseTheWeb.as(theActorInTheSpotlight()).getDriver();
         String currHandle = driver.getWindowHandle();
         Set<String> allHandles = driver.getWindowHandles();
