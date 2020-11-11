@@ -1,0 +1,12 @@
+starter/stepdefinitions/HiringManagerStepDefinitions.java
+ starter.stepdefinitions.HiringManagerStepDefinitions
+starter/CucumberTestSuite.java
+ starter.CucumberTestSuite
+starter/navigation/HiringManagerPage.java
+ starter.navigation.HiringManagerPage
+starter/StandardPortals/DoAddNewRequisition.java
+ starter.StandardPortals.DoAddNewRequisition
+starter/matchers/StringContainsIgnoringCase.java
+ starter.matchers.StringContainsIgnoringCase
+starter/navigation/NavigateTo.java
+ starter.navigation.NavigateTo
